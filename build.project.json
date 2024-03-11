@@ -1,0 +1,37 @@
+{
+  "name": "roblox-network-benchmark",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "Players": {
+      "$properties": {
+        "CharacterAutoLoads": false
+      }
+    },
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "out/shared",
+        "Packages": {
+          "$path": "packages"
+        },
+        "GetReceived": {
+          "$className": "RemoteFunction"
+        }
+      },
+      "Client": {
+        "$path": "out/client"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "out/server"
+      }
+    }
+  }
+}

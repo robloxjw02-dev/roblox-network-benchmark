@@ -1,41 +1,10 @@
-# Compiled Lua sources
-luac.out
+/out
+/packages
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+*.rbxl
+*.rbxl.lock
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+sourcemap.json
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+/src/shared/speedy
+/src/shared/swiftlink

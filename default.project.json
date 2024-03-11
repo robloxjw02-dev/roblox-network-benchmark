@@ -1,0 +1,25 @@
+{
+  "name": "roblox-network-benchmark",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared",
+        "Packages": {
+          "$path": "packages"
+        },
+        "GetReceived": {
+          "$className": "RemoteFunction"
+        }
+      },
+      "Client": {
+        "$path": "src/client"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    }
+  }
+}

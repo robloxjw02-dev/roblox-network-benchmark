@@ -1,0 +1,24 @@
+option ClientOutput = "./src/shared/swiftlink/Client.luau"
+option ServerOutput = "./src/shared/swiftlink/Server.luau"
+option Casing = camelCase
+
+event Booleans {
+    From: Client,
+    Type: Reliable,
+    Call: SingleAsync,
+    Data: boolean[]
+}
+
+event StructOfNumbers {
+    From: Client,
+    Type: Reliable,
+    Call: SingleAsync,
+    Data: {
+        id: u16,
+        x: i8,
+        y: i16,
+        z: i8,
+        orientation: i16,
+        animation: u8,
+    }[]
+}
