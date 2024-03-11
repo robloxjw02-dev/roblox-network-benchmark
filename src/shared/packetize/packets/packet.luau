@@ -115,10 +115,23 @@ return function(props: types.packetProps<types.dataTypeInterface<any>>, id: numb
 
 	function exported.listenTo(callback)
 		table.insert(listeners, callback)
+
+		return function()
+			local index = table.find(listeners, callback)
+			if index then
+				table.remove(listeners, index)
+			end
+		end
 	end
 
 	function exported.listen(callback)
 		table.insert(listeners, callback)
+		return function()
+			local index = table.find(listeners, callback)
+			if index then
+				table.remove(listeners, index)
+			end
+		end
 	end
 
 	function exported.getListeners()
