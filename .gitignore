@@ -6,5 +6,6 @@
 
 sourcemap.json
 
+# Hide Speedy and Swift Link Generated Folder
 /src/shared/speedy
 /src/shared/swiftlink
