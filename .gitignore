@@ -10,6 +10,8 @@ sourcemap.json
 /src/shared/speedy
 /src/shared/blitz
 
+/tools
+
 # Github Token
 config.json
 .env
