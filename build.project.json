@@ -15,13 +15,16 @@
       }
     },
     "ReplicatedStorage": {
+      "Packages": {
+        "$path": "packages"
+      },
       "Shared": {
         "$path": "out/shared",
-        "Packages": {
-          "$path": "packages"
-        },
         "GetReceived": {
           "$className": "RemoteFunction"
+        },
+        "Generate": {
+          "$className": "RemoteEvent"
         }
       },
       "Client": {

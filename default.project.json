@@ -3,13 +3,16 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
+      "Packages": {
+        "$path": "packages"
+      },
       "Shared": {
         "$path": "src/shared",
-        "Packages": {
-          "$path": "packages"
-        },
         "GetReceived": {
           "$className": "RemoteFunction"
+        },
+        "Generate": {
+          "$className": "RemoteEvent"
         }
       },
       "Client": {
