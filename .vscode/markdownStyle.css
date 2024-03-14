@@ -1,0 +1,24 @@
+.github-markdown-body {
+    padding: 0 !important;
+    max-width: auto !important;
+}
+
+.github-markdown-body {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+}
+
+.github-markdown-content a {
+    color: #89B4FA;
+}
+
+.github-markdown-body table tr {
+    --borderColor-muted: #313244;
+    --color-border-muted: #313244;
+    --bgColor-default: #1E1E2E;
+}
+
+.github-markdown-body table tr:nth-child(2n) {
+    --color-canvas-subtle: #313244;
+    background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+}
