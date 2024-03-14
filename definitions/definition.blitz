@@ -1,5 +1,5 @@
-option ClientOutput = "./src/shared/swiftlink/Client.luau"
-option ServerOutput = "./src/shared/swiftlink/Server.luau"
+option ClientOutput = "./src/shared/blitz/Client.luau"
+option ServerOutput = "./src/shared/blitz/Server.luau"
 option Casing = camelCase
 
 event Booleans {
