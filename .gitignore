@@ -6,6 +6,10 @@
 
 sourcemap.json
 
-# Hide Speedy and Swift Link Generated Folder
+# Hide Speedy and Blitz Generated Folder
 /src/shared/speedy
-/src/shared/swiftlink
+/src/shared/blitz
+
+# Github Token
+config.json
+.env
