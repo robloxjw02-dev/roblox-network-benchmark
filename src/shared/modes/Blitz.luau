@@ -1,7 +1,7 @@
 local RunService = game:GetService("RunService")
 
 if RunService:IsServer() then
-    return require("../swiftlink/Server")
+    return require("../blitz/Server")
 else
-    return require("../swiftlink/Client")
+    return require("../blitz/Client")
 end

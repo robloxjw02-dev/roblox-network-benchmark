@@ -2,7 +2,7 @@
 --!optimize 2
 --!native
 
-local Packetize = require("../packetize")
+local Packetize = require("../../../packages/packetize")
 
 return Packetize.defineNamespace('Benchmark', function()
     return {

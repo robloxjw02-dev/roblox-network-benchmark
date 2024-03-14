@@ -43,27 +43,24 @@ end
 
 local Received = {}
 for Name, Data in Benches do
+    local BenchReceived = {}
+    Received[Name] = BenchReceived
+
     local function OnReceive(Tool: string)
-        local ToolReceived = Received[Tool]
-        if not ToolReceived then
-            ToolReceived = {}
-            Received[Tool] = ToolReceived
-        end
+        BenchReceived[Tool] = 0
 
-        ToolReceived[Name] = 0
-
-        return function(Player, Receive)
-            ToolReceived[Name] += 1
-            if ToolReceived[Name] > 1 then
+		return function(Player, Receive)
+            BenchReceived[Tool] += 1
+            if BenchReceived[Tool] > 1 then
                 return
             end
 
-            if not CompareValues(Data, Receive) then
-                warn(`Received incorrect data with {Tool} for {Name}`)
-            end
-        end
+			if not CompareValues(Data, Receive) then
+				warn(`Received incorrect data with {Tool} for {Name}`)
+			end
+		end
     end
-    
+
     for Tool, Events in Modes  do
         local LowerCaseTool = Tool:lower()
         local Event = Events[Name]
@@ -72,7 +69,7 @@ for Name, Data in Benches do
             Event.setCallback(Callback)
         elseif LowerCaseTool == "packetize" then
             Event.listenTo(Callback)
-        elseif LowerCaseTool == "swiftlink" then
+        elseif LowerCaseTool == "blitz" then
             Event.setCallback(Callback)
         end
     end
@@ -81,3 +78,11 @@ end
 ReplicatedStorage.Shared.GetReceived.OnServerInvoke = function()
     return Received
 end
+
+ReplicatedStorage.Shared.Generate.OnServerEvent:Connect(function(Player, JSON)
+    local OutputJSON = Instance.new("StringValue")
+    OutputJSON.Name = "Result"
+    OutputJSON.Value = JSON
+    OutputJSON.Parent = game
+    print("Generated results")
+end)
