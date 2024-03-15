@@ -15,3 +15,6 @@ sourcemap.json
 # Github Token
 config.json
 .env
+
+# Testing Scripts
+/test.luau
