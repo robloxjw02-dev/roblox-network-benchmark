@@ -2,7 +2,7 @@ local fs = require("@lune/fs")
 local net = require("@lune/net")
 local process = require("@lune/process")
 
-local AUTH_TOKEN: string?
+local AUTH_TOKEN: string? = nil
 local PATH_TO_7ZIP = "C:\\Program Files\\7-Zip\\7z.exe"
 local PATH_TO_TOOLS = "./tools/"
 local PATH_TO_PACKAGES = "./packages/"
@@ -31,21 +31,28 @@ local Packages = {
 
 local Versions: { [string]: string } = {}
 
-if fs.isFile(".env") then
-	local Configuration = {}
-	for Line in string.gmatch(fs.readFile(".env"), "[^\r\n]+") do
-		local Key, Value = Line:match("^([^=]+)=(.+)$")
-		if Key and Value then
-			Configuration[Key] = Value
+local function FetchAuthenticationToken()
+	local AuthenticationToken: string?
+	if fs.isFile(".env") then
+		local Configuration = {}
+		for Line in string.gmatch(fs.readFile(".env"), "[^\r\n]+") do
+			local Key, Value = Line:match("^([^=]+)=(.+)$")
+			if Key and Value then
+				Configuration[Key] = Value
+			end
 		end
+
+		AuthenticationToken = Configuration["GITHUB_TOKEN"] 
+	elseif fs.isFile("config.json") then
+		local Configuration = net.jsonDecode(fs.readFile("config.json"))
+		AuthenticationToken = Configuration["github-token"]
 	end
 
-	AUTH_TOKEN = Configuration["GITHUB_TOKEN"]
-	print(`Using github token to do API requests!`)
-elseif fs.isFile("config.json") then
-    local Configuration = net.jsonDecode(fs.readFile("config.json"))
-	AUTH_TOKEN = Configuration["github-token"]
-	print(`Using github token to do API requests!`)
+	if AuthenticationToken then
+		print(`Using github token to do API requests!`)
+	end
+
+	return AuthenticationToken
 end
 
 local function Curl(URL: string, Output: string?, Headers: { string }?): process.SpawnResult
@@ -76,6 +83,16 @@ local function Curl(URL: string, Output: string?, Headers: { string }?): process
 	return process.spawn(`curl`, Arguments)
 end
 
+local function Download(Owner: string, RepoName: string, Tag: string, Pattern: string, Output: string)
+	local Arguments: { string } = { "release", "download", Tag, "--pattern", Pattern, "--repo" }
+	table.insert(Arguments, `{Owner}/{RepoName}`)
+	table.insert(Arguments, "--output")
+	table.insert(Arguments, Output)
+	table.insert(Arguments, "--clobber")
+
+	return process.spawn("gh", Arguments)
+end
+
 local function Request(Fetch: net.FetchParams): net.FetchResponse
 	if AUTH_TOKEN then
 		Fetch.headers = Fetch.headers or {};
@@ -93,15 +110,7 @@ local function Request(Fetch: net.FetchParams): net.FetchResponse
 	return Response
 end
 
-local function Download(Owner: string, RepoName: string, Tag: string, Pattern: string, Output: string)
-	local Arguments: { string } = { "release", "download", Tag, "--pattern", Pattern, "--repo" }
-	table.insert(Arguments, `{Owner}/{RepoName}`)
-	table.insert(Arguments, "--output")
-	table.insert(Arguments, Output)
-	table.insert(Arguments, "--clobber")
-
-	return process.spawn("gh", Arguments)
-end
+AUTH_TOKEN = FetchAuthenticationToken()
 
 for Name, Url in Tools do
 	local Response = Request({
