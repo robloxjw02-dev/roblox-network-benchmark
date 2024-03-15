@@ -11,7 +11,7 @@ rmdir /s /q ".\tools"
 rmdir /s /q ".\packages"
 mkdir ".\tools"
 mkdir ".\packages"
-lune run download
+lune run "./scripts/download"
 del /q ".\tools\*.zip"
 del /q ".\packages\*.zip"
 
@@ -40,7 +40,7 @@ SET "OPENSTUDIO=N"
 SET /P OPENSTUDIO=Open generated place? (Y/[N])?
 if /I %OPENSTUDIO% NEQ Y GOTO END
 
-lune run generate
+lune run "./scripts/generate"
 
 :END
 endlocal
