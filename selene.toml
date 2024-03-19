@@ -1,2 +1,7 @@
-std = "roblox"
-std = "luau"
+std = "luau+roblox"
+
+[lints]
+multiple_statements = "allow"
+shadowing = "allow"
+mixed_table = "allow"
+unused_variable = "allow"
