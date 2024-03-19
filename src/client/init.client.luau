@@ -1,3 +1,4 @@
+--!strict
 repeat task.wait() until game:IsLoaded()
 
 local Modes = require("../shared/modes")
@@ -46,13 +47,11 @@ type Results = {
 
 local function Percentile(Samples: {number}, Percentile: number)
     assert((Percentile // 1) == Percentile and Percentile >= 0 and Percentile <= 100, "Percentile must be an integer between 0 and 100")
-    local Index = ((#Samples * (Percentile / 100)) // 1)
-    Index = math.max(Index, 1)
+    local Index = math.max(((#Samples * (Percentile / 100)) // 1), 1) 
     return Samples[Index]
 end
 
 local function RunBenchmark(Tool: string, Bench: string): Benchmark
-    local LowerCaseTool = Tool:lower()
     local Total = 0
     local Frames = 0
     local Bandwidth = {}
@@ -63,21 +62,7 @@ local function RunBenchmark(Tool: string, Bench: string): Benchmark
     local Events = Modes[Tool]
 
     local Event = Events[Bench]
-    local Method;
-
-    if LowerCaseTool == "packetize" then
-		Method = function(Data)
-			Event.send(Data)
-		end
-	elseif LowerCaseTool == "speedy" then
-		Method = function(Data)
-			Event.send(Data)
-		end
-	elseif LowerCaseTool == "blitz" then
-		Method = function(Data)
-			Event.send(Data)
-		end
-	end
+    local Method = Event.send
 
     local Connection = RunService.PostSimulation:Connect(function(DeltaTime: number)
         Total += DeltaTime
@@ -91,7 +76,7 @@ local function RunBenchmark(Tool: string, Bench: string): Benchmark
             Frames = 0
         end
 
-        for Index = 1, 1000 do
+        for _ = 1, 1000 do
             Sent += 1
             Method(Data)
         end

@@ -1,3 +1,5 @@
+--!native
+--!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Modes = require("../shared/modes")
@@ -49,7 +51,7 @@ for Name, Data in Benches do
     local function OnReceive(Tool: string)
         BenchReceived[Tool] = 0
 
-		return function(Player, Receive)
+		return function(_, Receive)
             BenchReceived[Tool] += 1
             if BenchReceived[Tool] > 1 then
                 return
@@ -65,13 +67,9 @@ for Name, Data in Benches do
         local LowerCaseTool = Tool:lower()
         local Event = Events[Name]
         local Callback = OnReceive(Tool)
-        if LowerCaseTool == "speedy" then
-            Event.setCallback(Callback)
-        elseif LowerCaseTool == "packetize" then
-            Event.listenTo(Callback)
-        elseif LowerCaseTool == "blitz" then
-            Event.setCallback(Callback)
-        end
+
+        local Method = LowerCaseTool == "packetize" and Event.listenTo or Event.setCallback
+        Method(Callback)
     end
 end
 
@@ -79,7 +77,7 @@ ReplicatedStorage.Shared.GetReceived.OnServerInvoke = function()
     return Received
 end
 
-ReplicatedStorage.Shared.Generate.OnServerEvent:Connect(function(Player, JSON)
+ReplicatedStorage.Shared.Generate.OnServerEvent:Connect(function(_, JSON)
     local OutputJSON = Instance.new("StringValue")
     OutputJSON.Name = "Result"
     OutputJSON.Value = JSON
