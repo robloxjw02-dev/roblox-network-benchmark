@@ -1,30 +1,22 @@
 --!strict
-local Dotenv = {}
+
+-- Required Modules --
 local fs = require("@lune/fs")
 local process = require("@lune/process")
 
-type DotenvConfigOptions = {
-    path: string | { string }?,
-    override: boolean?,
-    processEnv: DotenvPopulateInput?,
-}
+--[=[
+    @class Dotenv
+    Transform node js dotenv to luau
+]=]
+local Dotenv = {}
 
-type DotenvPopulateInput = {
-    [string]: string;
-}
+local LINE = "%s*(%w[%w_]-)%s*=%s*([^#]+)"
 
-type DotenvParseOutput = {
-    [string]: string;
-}
-
-type DotenvConfigOutput = {
-    parsed: DotenvParseOutput?;
-}
-
-local defaultOptions = {
+local DEFAULT_OPTIONS = {
     override = false,
     path = nil,
-}
+    processEnv = nil,
+} :: DotenvConfigOptions
 
 --[=[
     @within Dotenv
@@ -46,13 +38,18 @@ function Dotenv.parse(src: string): DotenvParseOutput
     -- Convert line breaks to same format
     lines = string.gsub(lines, "\r\n?", "\n") 
 
-    -- local LINE = "[^\r\n]+"
-    local LINE = "%s*(%w[%w_]-)%s*=%s*([^#]+)"
     for line in string.gmatch(lines, "[^\r\n]+") do
         local key, value = string.match(line, LINE)
+        -- Default nil to empty string
         value = value or ""
+
+        -- Remove whitespace
         value = (string.match(value, "^%s*(.-)%s*$") :: any)
+
+        -- Remove surrounding quotes
         value = string.gsub(value, "^(['\"`])([\r\n%s%S]*)(%1)$", "%2")
+
+        -- Add to object
         obj[key] = value
     end
 
@@ -87,7 +84,7 @@ end
     Loads `.env` file contents into process.env.
 ]=]
 function Dotenv.configDotenv(options: DotenvConfigOptions?): DotenvConfigOutput
-    local opt = options or defaultOptions 
+    local opt = options or DEFAULT_OPTIONS 
     local dotenvPath = `{process.cwd}/.env`
 
     local optionPaths = { dotenvPath }
@@ -119,5 +116,23 @@ function Dotenv.config(options: DotenvConfigOptions?): DotenvConfigOutput
     -- TODO: Support for vault
     return Dotenv.configDotenv(options)
 end
+
+export type DotenvConfigOptions = {
+    path: string | { string }?,
+    override: boolean?,
+    processEnv: DotenvPopulateInput?,
+}
+
+export type DotenvPopulateInput = {
+    [string]: string;
+}
+
+export type DotenvParseOutput = {
+    [string]: string;
+}
+
+export type DotenvConfigOutput = {
+    parsed: DotenvParseOutput?;
+}
 
 return Dotenv 
