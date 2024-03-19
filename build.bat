@@ -29,7 +29,6 @@ endlocal
 echo Building ROBLOX place
 if exist out rmdir /s /q  out
 if exist "./Benchmark.rbxl" del "./Benchmark.rbxl"
-mkdir out
 rojo sourcemap default.project.json --output sourcemap.json --include-non-scripts
 darklua process src out
 
