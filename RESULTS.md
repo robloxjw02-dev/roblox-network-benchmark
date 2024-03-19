@@ -5,44 +5,7 @@
 
 ---
 
-## Benchmark 1 (03/15/24 00:04:54 UTC)
-
-### Tool Versions
-`speedy`: v0.1.3  
-`packetize`: v0.1.2  
-`blitz`: v0.1.2  
-### Computer Specs
-Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
-Memory #1: `17GB 3200`  
-Memory #2: `17GB 3200`  
-### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
-|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|41.00|41.00|42.00|42.00|42.00|43.00|415,000|415,000|0%|
-|Packetize|26.00|26.00|27.00|27.00|27.00|27.00|264,000|264,000|0%|
-|Blitz|60.00|59.00|60.00|60.00|60.00|61.00|601,000|601,000|0%|
-
-|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|22.24|13.35|22.48|21.74|21.74|22.66|415,000|415,000|0%|
-|Packetize|21.86|11.81|21.55|22.94|22.94|23.08|264,000|264,000|0%|
-|Blitz|21.63|17.21|21.71|21.75|21.75|21.70|601,000|601,000|0%|
-### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
-|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|28.00|26.00|28.00|29.00|29.00|29.00|278,000|278,000|0%|
-|Packetize|29.00|29.00|30.00|30.00|30.00|31.00|295,000|295,000|0%|
-|Blitz|33.00|32.00|33.00|33.00|33.00|35.00|330,000|330,000|0%|
-
-|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|63.00|41.81|62.24|62.62|62.62|60.78|278,000|278,000|0%|
-|Packetize|62.60|33.66|62.73|61.63|61.63|62.86|295,000|295,000|0%|
-|Blitz|63.56|35.92|62.13|62.48|62.48|61.82|330,000|330,000|0%|
-
----
-
-## Benchmark 2 (03/15/24 00:54:18 UTC)
+## Benchmark 1 (03/15/24 02:10:14 UTC)
 
 ### Tool Versions
 `speedy`: v0.1.3  
@@ -55,63 +18,542 @@ Memory #2: `17GB 3200`
 ### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
 |Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
 |---|---|---|---|---|---|---|---|---|---|
-|Speedy|40.00|39.00|40.00|41.00|41.00|41.00|399,000|399,000|0%|
-|Packetize|26.00|25.00|26.00|27.00|27.00|28.00|262,000|262,000|0%|
-|Blitz|60.00|59.00|60.00|60.00|60.00|60.00|598,000|598,000|0%|
-
-|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|22.26|13.50|22.49|21.87|21.87|21.73|399,000|399,000|0%|
-|Packetize|22.55|11.84|22.69|21.77|21.77|22.54|262,000|262,000|0%|
-|Blitz|22.10|17.05|21.81|22.07|22.07|21.70|598,000|598,000|0%|
-### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
-|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|28.00|25.00|29.00|29.00|29.00|29.00|276,000|276,000|0%|
-|Packetize|29.00|28.00|30.00|30.00|30.00|31.00|291,000|291,000|0%|
-|Blitz|32.00|31.00|33.00|33.00|33.00|34.00|324,000|324,000|0%|
-
-|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|60.66|40.03|62.41|61.43|61.43|61.97|276,000|276,000|0%|
-|Packetize|63.35|34.25|62.86|61.20|61.20|62.20|291,000|291,000|0%|
-|Blitz|62.78|35.59|60.97|62.81|62.81|61.60|324,000|324,000|0%|
-
----
-
-## Benchmark 3 (03/15/24 00:59:50 UTC)
-
-### Tool Versions
-`speedy`: v0.1.3  
-`packetize`: v0.1.2  
-`blitz`: v0.1.3  
-### Computer Specs
-Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
-Memory #1: `17GB 3200`  
-Memory #2: `17GB 3200`  
-### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
-|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
-|---|---|---|---|---|---|---|---|---|---|
-|Speedy|40.00|39.00|41.00|41.00|41.00|41.00|404,000|404,000|0%|
-|Packetize|26.00|26.00|27.00|27.00|27.00|28.00|266,000|266,000|0%|
+|Speedy|40.00|40.00|41.00|41.00|41.00|41.00|403,000|403,000|0%|
+|Packetize|26.00|26.00|27.00|27.00|27.00|28.00|265,000|265,000|0%|
 |Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
 
 |Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
 |---|---|---|---|---|---|---|---|---|---|
-|Speedy|22.33|13.64|21.96|22.03|22.03|21.65|404,000|404,000|0%|
-|Packetize|22.66|11.96|22.00|22.92|22.92|22.19|266,000|266,000|0%|
-|Blitz|21.65|17.18|21.83|21.94|21.94|21.80|601,000|601,000|0%|
+|Speedy|22.26|13.58|22.46|21.60|21.60|21.86|403,000|403,000|0%|
+|Packetize|22.28|11.80|22.58|22.70|22.70|22.76|265,000|265,000|0%|
+|Blitz|21.84|16.65|22.00|21.97|21.97|22.06|601,000|601,000|0%|
 ### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
 |Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
 |---|---|---|---|---|---|---|---|---|---|
-|Speedy|28.00|26.00|28.00|29.00|29.00|29.00|278,000|278,000|0%|
-|Packetize|27.00|26.00|27.00|28.00|28.00|29.00|272,000|272,000|0%|
+|Speedy|29.00|26.00|29.00|29.00|29.00|30.00|285,000|285,000|0%|
+|Packetize|27.00|25.00|27.00|28.00|28.00|29.00|270,000|270,000|0%|
+|Blitz|33.00|32.00|33.00|33.00|33.00|35.00|330,000|330,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|60.68|39.48|60.85|62.64|62.64|62.44|285,000|285,000|0%|
+|Packetize|62.13|33.25|62.32|64.33|64.33|61.65|270,000|270,000|0%|
+|Blitz|61.59|36.10|61.28|61.96|61.96|63.82|330,000|330,000|0%|
+
+---
+
+## Benchmark 2 (03/15/24 02:17:13 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.2  
+`blitz`: v0.1.3  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|40.00|39.00|41.00|41.00|41.00|41.00|402,000|402,000|0%|
+|Packetize|25.00|23.00|26.00|26.00|26.00|27.00|252,000|252,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.75|13.65|22.05|21.61|21.61|22.21|402,000|402,000|0%|
+|Packetize|21.89|10.55|21.97|22.16|22.16|22.19|252,000|252,000|0%|
+|Blitz|21.88|16.67|21.97|21.77|21.77|21.62|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|27.00|25.00|28.00|28.00|28.00|28.00|272,000|272,000|0%|
+|Packetize|30.00|29.00|30.00|30.00|30.00|30.00|296,000|296,000|0%|
+|Blitz|33.00|32.00|33.00|34.00|34.00|34.00|329,000|329,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.80|39.36|61.68|62.38|62.38|63.61|272,000|272,000|0%|
+|Packetize|62.80|32.88|61.31|63.38|63.38|61.44|296,000|296,000|0%|
+|Blitz|61.57|35.85|62.96|61.58|61.58|61.82|329,000|329,000|0%|
+
+---
+
+## Benchmark 3 (03/15/24 02:35:36 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.2  
+`blitz`: v0.1.3  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|40.00|39.00|40.00|40.00|40.00|40.00|397,000|397,000|0%|
+|Packetize|26.00|24.00|27.00|27.00|27.00|29.00|265,000|265,000|0%|
+|Blitz|60.00|59.00|60.00|61.00|61.00|61.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|22.04|12.55|22.23|22.63|22.63|21.63|397,000|397,000|0%|
+|Packetize|21.98|11.16|22.10|23.12|23.12|22.53|265,000|265,000|0%|
+|Blitz|21.72|16.65|21.75|21.81|21.81|21.63|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|28.00|28.00|28.00|28.00|277,000|277,000|0%|
+|Packetize|29.00|29.00|30.00|30.00|30.00|31.00|294,000|294,000|0%|
+|Blitz|33.00|32.00|33.00|33.00|33.00|34.00|327,000|327,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.08|41.87|63.63|61.55|61.55|62.00|277,000|277,000|0%|
+|Packetize|63.09|34.13|61.27|61.80|61.80|63.24|294,000|294,000|0%|
+|Blitz|63.19|35.23|63.14|61.09|61.09|62.85|327,000|327,000|0%|
+
+---
+
+## Benchmark 4 (03/15/24 03:32:25 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.2  
+`blitz`: v0.1.3  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|37.00|34.00|38.00|38.00|38.00|38.00|372,000|372,000|0%|
+|Packetize|25.00|24.00|26.00|26.00|26.00|27.00|255,000|255,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|22.10|12.17|22.12|21.96|21.96|21.63|372,000|372,000|0%|
+|Packetize|22.31|11.54|22.55|22.87|22.87|22.50|255,000|255,000|0%|
+|Blitz|21.81|16.76|21.67|21.76|21.76|21.78|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|29.00|29.00|29.00|29.00|280,000|280,000|0%|
+|Packetize|29.00|28.00|29.00|30.00|30.00|31.00|291,000|291,000|0%|
+|Blitz|33.00|32.00|33.00|33.00|33.00|34.00|327,000|327,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.06|41.15|62.13|61.66|61.66|62.41|280,000|280,000|0%|
+|Packetize|61.61|32.60|63.54|60.38|60.38|63.92|291,000|291,000|0%|
+|Blitz|62.15|33.61|60.70|63.55|63.55|61.31|327,000|327,000|0%|
+
+---
+
+## Benchmark 5 (03/15/24 04:13:53 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.2  
+`blitz`: v0.1.3  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|39.00|38.00|39.00|39.00|39.00|40.00|388,000|388,000|0%|
+|Packetize|26.00|25.00|26.00|27.00|27.00|28.00|262,000|262,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.85|11.88|21.82|21.82|21.82|21.72|388,000|388,000|0%|
+|Packetize|22.10|10.85|22.62|22.45|22.45|22.42|262,000|262,000|0%|
+|Blitz|21.81|16.29|21.88|21.95|21.95|21.90|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|25.00|29.00|29.00|29.00|29.00|280,000|280,000|0%|
+|Packetize|29.00|28.00|30.00|30.00|30.00|31.00|293,000|293,000|0%|
 |Blitz|33.00|32.00|33.00|33.00|33.00|35.00|328,000|328,000|0%|
 
 |Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
 |---|---|---|---|---|---|---|---|---|---|
-|Speedy|62.47|40.66|61.04|63.45|63.45|62.29|278,000|278,000|0%|
-|Packetize|62.63|32.94|64.86|62.01|62.01|62.34|272,000|272,000|0%|
-|Blitz|61.13|35.99|63.69|61.72|61.72|61.84|328,000|328,000|0%|
+|Speedy|63.04|41.53|63.10|61.31|61.31|63.56|280,000|280,000|0%|
+|Packetize|60.78|34.11|60.96|61.61|61.61|63.07|293,000|293,000|0%|
+|Blitz|61.65|31.10|62.91|61.62|61.62|61.48|328,000|328,000|0%|
 
 ---
+
+## Benchmark 6 (03/15/24 04:46:17 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.1.3  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|41.00|40.00|41.00|41.00|41.00|42.00|410,000|410,000|0%|
+|Packetize|26.00|26.00|27.00|27.00|27.00|29.00|267,000|267,000|0%|
+|Blitz|60.00|59.00|60.00|60.00|60.00|60.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.91|13.65|22.04|22.16|22.16|21.81|410,000|410,000|0%|
+|Packetize|22.24|10.52|23.07|22.14|22.14|22.67|267,000|267,000|0%|
+|Blitz|21.74|16.70|21.89|21.91|21.91|21.79|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|28.00|28.00|28.00|28.00|277,000|277,000|0%|
+|Packetize|26.00|26.00|27.00|27.00|27.00|28.00|266,000|266,000|0%|
+|Blitz|33.00|32.00|33.00|33.00|33.00|35.00|328,000|328,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.25|44.42|62.53|63.23|63.23|61.78|277,000|277,000|0%|
+|Packetize|63.23|32.44|61.08|62.85|62.85|61.43|266,000|266,000|0%|
+|Blitz|63.63|36.07|61.53|61.71|61.71|63.27|328,000|328,000|0%|
+
+---
+
+## Benchmark 7 (03/17/24 21:37:49 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.0  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|39.00|38.00|39.00|39.00|39.00|39.00|386,000|386,000|0%|
+|Packetize|25.00|25.00|26.00|26.00|26.00|27.00|254,000|254,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.60|13.11|22.46|21.84|21.84|22.34|386,000|386,000|0%|
+|Packetize|21.83|11.91|22.63|21.87|21.87|22.79|254,000|254,000|0%|
+|Blitz|21.79|16.76|21.71|21.74|21.74|21.85|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|27.00|25.00|27.00|27.00|27.00|28.00|265,000|265,000|0%|
+|Packetize|27.00|27.00|28.00|28.00|28.00|28.00|273,000|273,000|0%|
+|Blitz|32.00|31.00|32.00|32.00|32.00|33.00|317,000|317,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.48|40.74|62.54|62.62|62.62|60.69|265,000|265,000|0%|
+|Packetize|63.34|32.45|63.51|62.13|62.13|62.03|273,000|273,000|0%|
+|Blitz|61.49|35.35|60.88|63.07|63.07|61.59|317,000|317,000|0%|
+
+---
+
+## Benchmark 8 (03/18/24 00:21:23 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.0  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|30.00|29.00|30.00|30.00|30.00|31.00|298,000|298,000|0%|
+|Packetize|25.00|24.00|25.00|26.00|26.00|27.00|252,000|252,000|0%|
+|Blitz|55.00|54.00|55.00|55.00|55.00|55.00|546,000|546,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.95|11.54|21.89|22.18|22.18|22.63|298,000|298,000|0%|
+|Packetize|22.31|11.77|22.75|22.43|22.43|23.16|252,000|252,000|0%|
+|Blitz|21.31|16.38|21.70|21.95|21.95|21.82|546,000|546,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|25.00|24.00|25.00|26.00|26.00|26.00|226,000|226,000|0%|
+|Packetize|28.00|27.00|29.00|29.00|29.00|30.00|283,000|283,000|0%|
+|Blitz|32.00|30.00|32.00|32.00|32.00|34.00|317,000|317,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|62.89|42.64|60.84|65.04|65.04|62.55|226,000|226,000|0%|
+|Packetize|63.22|33.81|62.24|60.98|60.98|63.73|283,000|283,000|0%|
+|Blitz|60.73|35.59|61.05|62.65|62.65|61.63|317,000|317,000|0%|
+
+---
+
+## Benchmark 9 (03/18/24 00:26:02 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.0  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|38.00|37.00|38.00|39.00|39.00|39.00|380,000|380,000|0%|
+|Packetize|25.00|24.00|26.00|26.00|26.00|27.00|252,000|252,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|22.00|13.05|22.02|22.69|22.69|22.30|380,000|380,000|0%|
+|Packetize|22.44|11.86|23.02|21.98|21.98|22.45|252,000|252,000|0%|
+|Blitz|21.82|17.07|21.86|21.95|21.95|21.99|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|27.00|25.00|27.00|28.00|28.00|28.00|267,000|267,000|0%|
+|Packetize|28.00|27.00|28.00|28.00|28.00|29.00|279,000|279,000|0%|
+|Blitz|32.00|31.00|32.00|32.00|32.00|34.00|320,000|320,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|61.33|43.81|62.47|61.31|61.31|61.89|267,000|267,000|0%|
+|Packetize|62.75|33.44|61.18|61.28|61.28|61.83|279,000|279,000|0%|
+|Blitz|60.87|35.65|61.85|62.22|62.22|61.91|320,000|320,000|0%|
+
+---
+
+## Benchmark 10 (03/18/24 02:55:47 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.0  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|40.00|39.00|40.00|40.00|40.00|41.00|399,000|399,000|0%|
+|Packetize|25.00|24.00|25.00|25.00|25.00|27.00|249,000|249,000|0%|
+|Blitz|60.00|59.00|60.00|60.00|60.00|61.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.96|13.13|21.82|21.85|21.85|21.76|399,000|399,000|0%|
+|Packetize|22.25|11.48|22.21|21.81|21.81|23.14|249,000|249,000|0%|
+|Blitz|21.95|17.00|22.52|22.07|22.07|21.88|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|29.00|27.00|29.00|29.00|29.00|30.00|286,000|286,000|0%|
+|Packetize|26.00|26.00|27.00|27.00|27.00|28.00|265,000|265,000|0%|
+|Blitz|33.00|32.00|33.00|33.00|33.00|34.00|330,000|330,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|59.78|42.67|62.01|62.47|62.47|62.53|286,000|286,000|0%|
+|Packetize|61.80|32.69|62.76|63.30|63.30|61.21|265,000|265,000|0%|
+|Blitz|61.79|36.02|61.87|62.89|62.89|61.53|330,000|330,000|0%|
+
+---
+
+## Benchmark 11 (03/18/24 11:11:47 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.0  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|39.00|39.00|40.00|40.00|40.00|40.00|394,000|394,000|0%|
+|Packetize|26.00|25.00|26.00|26.00|26.00|27.00|258,000|258,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.75|13.45|21.55|21.83|21.83|21.74|394,000|394,000|0%|
+|Packetize|22.50|11.73|22.30|22.35|22.35|23.15|258,000|258,000|0%|
+|Blitz|21.75|16.63|21.83|21.90|21.90|21.95|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|28.00|28.00|28.00|28.00|279,000|279,000|0%|
+|Packetize|26.00|26.00|26.00|27.00|27.00|28.00|263,000|263,000|0%|
+|Blitz|32.00|32.00|32.00|33.00|33.00|34.00|323,000|323,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|62.93|44.65|62.01|62.98|62.98|62.62|279,000|279,000|0%|
+|Packetize|62.64|32.35|62.51|62.81|62.81|62.47|263,000|263,000|0%|
+|Blitz|62.68|35.11|60.69|62.72|62.72|63.18|323,000|323,000|0%|
+
+---
+
+## Benchmark 12 (03/19/24 05:21:26 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.1  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|38.00|37.00|39.00|39.00|39.00|39.00|384,000|384,000|0%|
+|Packetize|26.00|26.00|26.00|27.00|27.00|28.00|262,000|262,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.52|13.10|21.96|22.55|22.55|21.76|384,000|384,000|0%|
+|Packetize|22.44|12.09|22.42|22.34|22.34|22.65|262,000|262,000|0%|
+|Blitz|22.07|16.19|21.81|21.82|21.82|21.59|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|28.00|29.00|29.00|29.00|279,000|279,000|0%|
+|Packetize|28.00|26.00|28.00|28.00|28.00|30.00|279,000|279,000|0%|
+|Blitz|32.00|32.00|32.00|33.00|33.00|34.00|323,000|323,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|62.14|43.78|63.27|61.47|61.47|63.09|279,000|279,000|0%|
+|Packetize|61.26|33.70|61.77|62.29|62.29|62.37|279,000|279,000|0%|
+|Blitz|60.34|35.85|62.61|62.46|62.46|62.08|323,000|323,000|0%|
+
+---
+
+## Benchmark 13 (03/19/24 07:43:29 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.1  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|38.00|37.00|39.00|39.00|39.00|39.00|381,000|381,000|0%|
+|Packetize|25.00|25.00|26.00|26.00|26.00|27.00|254,000|254,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|600,000|600,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.96|12.92|22.07|21.84|21.84|22.73|381,000|381,000|0%|
+|Packetize|21.93|11.82|22.06|22.80|22.80|22.37|254,000|254,000|0%|
+|Blitz|21.81|17.23|21.84|21.94|21.94|21.71|600,000|600,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|27.00|24.00|28.00|28.00|28.00|28.00|266,000|266,000|0%|
+|Packetize|26.00|25.00|26.00|26.00|26.00|27.00|257,000|257,000|0%|
+|Blitz|32.00|31.00|32.00|32.00|32.00|33.00|319,000|319,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|62.85|41.47|63.15|61.39|61.39|61.66|266,000|266,000|0%|
+|Packetize|61.87|30.42|61.14|61.88|61.88|63.58|257,000|257,000|0%|
+|Blitz|61.35|35.35|61.85|63.87|63.87|61.95|319,000|319,000|0%|
+
+---
+
+## Benchmark 14 (03/19/24 08:17:03 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.1  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|39.00|38.00|39.00|40.00|40.00|40.00|391,000|391,000|0%|
+|Packetize|26.00|25.00|26.00|26.00|26.00|28.00|259,000|259,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.95|11.66|21.91|22.02|22.02|21.76|391,000|391,000|0%|
+|Packetize|21.96|12.01|22.06|22.06|22.06|23.09|259,000|259,000|0%|
+|Blitz|21.79|16.10|22.02|22.03|22.03|22.15|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|28.00|26.00|29.00|29.00|29.00|29.00|280,000|280,000|0%|
+|Packetize|28.00|28.00|29.00|29.00|29.00|30.00|283,000|283,000|0%|
+|Blitz|32.00|32.00|33.00|33.00|33.00|34.00|325,000|325,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|62.23|42.06|61.60|62.10|62.10|61.84|280,000|280,000|0%|
+|Packetize|62.48|33.22|63.49|61.69|61.69|63.29|283,000|283,000|0%|
+|Blitz|62.93|34.20|63.23|61.65|61.65|63.10|325,000|325,000|0%|
+
+---
+
+## Benchmark 15 (03/19/24 10:41:08 UTC)
+
+### Tool Versions
+`speedy`: v0.1.3  
+`packetize`: v0.1.3  
+`blitz`: v0.2.1  
+### Computer Specs
+Processor: `AMD Ryzen 5 5600X 6-Core Processor `  
+Memory #1: `17GB 3200`  
+Memory #2: `17GB 3200`  
+### [Booleans](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/Booleans.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|37.00|37.00|38.00|38.00|38.00|39.00|376,000|376,000|0%|
+|Packetize|25.00|24.00|25.00|26.00|26.00|27.00|252,000|252,000|0%|
+|Blitz|60.00|60.00|60.00|60.00|60.00|60.00|601,000|601,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|21.80|13.27|21.74|22.09|22.09|22.47|376,000|376,000|0%|
+|Packetize|22.77|11.45|22.47|22.64|22.64|22.67|252,000|252,000|0%|
+|Blitz|22.07|16.89|22.05|22.05|22.05|21.75|601,000|601,000|0%|
+### [StructOfNumbers](https://github.com/robloxjw02-dev/roblox-network-benchmark/blob/main/src/shared/benches/StructOfNumbers.luau)
+|Tool (FPS)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|27.00|26.00|27.00|28.00|28.00|28.00|268,000|268,000|0%|
+|Packetize|28.00|27.00|28.00|28.00|28.00|30.00|279,000|279,000|0%|
+|Blitz|30.00|30.00|31.00|31.00|31.00|32.00|304,000|304,000|0%|
+
+|Tool (Kbps)|Median|P0|P80|P90|P95|P100|Data Sent|Data Receive|Loss (%)|
+|---|---|---|---|---|---|---|---|---|---|
+|Speedy|59.76|41.74|62.26|62.89|62.89|61.85|268,000|268,000|0%|
+|Packetize|61.34|33.48|62.09|62.49|62.49|64.20|279,000|279,000|0%|
+|Blitz|61.37|33.67|61.75|63.51|63.51|62.28|304,000|304,000|0%|
