@@ -18,3 +18,4 @@ config.json
 
 # Testing Scripts
 /test.luau
+/test
